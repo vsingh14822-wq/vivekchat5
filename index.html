@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VivekChats</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">VivekChats</div>
+
+<!-- SCREENS -->
+<div id="chats" class="screen active"></div>
+
+<div id="status" class="screen">
+<input id="statusInput" placeholder="Write status...">
+<button onclick="addStatus()">Post</button>
+<div id="statusList"></div>
+</div>
+
+<div id="contacts" class="screen">
+<input id="newName" placeholder="Name">
+<input id="newPhone" placeholder="Phone">
+<button onclick="addContact()">Add</button>
+<div id="contactList"></div>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+<button onclick="switchScreen('chats')">💬</button>
+<button onclick="switchScreen('status')">📸</button>
+<button onclick="switchScreen('contacts')">👥</button>
+</div>
+
+<!-- CHAT WINDOW -->
+<div class="chat-window" id="chatWindow">
+
+<div class="chat-header">
+<button onclick="closeChat()">⬅</button>
+<h3 id="chatName"></h3>
+<button onclick="makeCall()">📞</button>
+<button onclick="startVideoCall()">📹</button>
+<button onclick="deleteAllChat()">🧹</button>
+</div>
+
+<div id="messages" class="messages"></div>
+
+<div class="input-area">
+<input id="messageInput" placeholder="Message...">
+<input type="file" onchange="sendFile(event)">
+<button onclick="sendMessage()">➤</button>
+<button onclick="startRecording()">🎤</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
